@@ -776,6 +776,7 @@ public class ContextConfig implements LifecycleListener {
 
         webConfig();
 
+        //add by cassey
         context.addServletContainerInitializer(new JasperInitializer(), null);
 
         if (!context.getIgnoreAnnotations()) {
