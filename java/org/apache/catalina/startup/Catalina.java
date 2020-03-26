@@ -527,6 +527,7 @@ public class Catalina {
 
     /**
      * Start a new server instance.
+     * 加载和解析server.xml
      */
     public void load() {
 

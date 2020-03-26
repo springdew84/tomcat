@@ -253,8 +253,11 @@ public final class Bootstrap {
         initClassLoaders();
 
         Logger.log(this.getClass().getClassLoader().toString());
+
         Thread.currentThread().setContextClassLoader(catalinaLoader);
+
         Logger.log(this.getClass().getClassLoader().toString());
+        Logger.log(catalinaLoader.toString());
 
         SecurityClassLoad.securityClassLoad(catalinaLoader);
 
@@ -303,6 +306,7 @@ public final class Bootstrap {
         if (log.isDebugEnabled()) {
             log.debug("Calling startup class " + method);
         }
+
         method.invoke(catalinaDaemon, param);
     }
 
