@@ -27,7 +27,7 @@ import java.util.List;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-import org.apache.Logger;
+import org.apache.MyLogger;
 import org.apache.catalina.Globals;
 import org.apache.catalina.security.SecurityClassLoad;
 import org.apache.catalina.startup.ClassLoaderFactory.Repository;
@@ -252,12 +252,7 @@ public final class Bootstrap {
 
         initClassLoaders();
 
-        Logger.log(this.getClass().getClassLoader().toString());
-
         Thread.currentThread().setContextClassLoader(catalinaLoader);
-
-        Logger.log(this.getClass().getClassLoader().toString());
-        Logger.log(catalinaLoader.toString());
 
         SecurityClassLoad.securityClassLoad(catalinaLoader);
 

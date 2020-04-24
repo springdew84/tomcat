@@ -61,7 +61,7 @@ import org.apache.juli.logging.LogFactory;
 public final class JspRuntimeContext {
 
     /**
-     * Logger
+     * MyLogger
      */
     private final Log log = LogFactory.getLog(JspRuntimeContext.class); // must not be static
 

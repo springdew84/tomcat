@@ -29,6 +29,7 @@ import java.net.URLClassLoader;
 import javax.management.ObjectName;
 import javax.servlet.ServletContext;
 
+import org.apache.MyLogger;
 import org.apache.catalina.Context;
 import org.apache.catalina.Globals;
 import org.apache.catalina.Lifecycle;
@@ -376,6 +377,7 @@ public class WebappLoader extends LifecycleMBeanBase
      */
     @Override
     protected void startInternal() throws LifecycleException {
+        MyLogger.log(this);
 
         if (log.isDebugEnabled())
             log.debug(sm.getString("webappLoader.starting"));

@@ -535,7 +535,7 @@ public class Digester extends DefaultHandler2 {
 
 
     /**
-     * @return the current Logger associated with this instance of the Digester
+     * @return the current MyLogger associated with this instance of the Digester
      */
     public Log getLogger() {
 

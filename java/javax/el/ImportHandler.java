@@ -150,7 +150,7 @@ public class ImportHandler {
         javaLangClassNames.add("Readable");
         javaLangClassNames.add("Runnable");
         javaLangClassNames.add("StackWalker.StackFrame");
-        javaLangClassNames.add("System.Logger");
+        javaLangClassNames.add("System.MyLogger");
         javaLangClassNames.add("Thread.UncaughtExceptionHandler");
         //Classes
         javaLangClassNames.add("Boolean");
@@ -201,7 +201,7 @@ public class ImportHandler {
         javaLangClassNames.add("Character.UnicodeScript");
         javaLangClassNames.add("ProcessBuilder.Redirect.Type");
         javaLangClassNames.add("StackWalker.Option");
-        javaLangClassNames.add("System.Logger.Level");
+        javaLangClassNames.add("System.MyLogger.Level");
         javaLangClassNames.add("Thread.State");
         //Exceptions
         javaLangClassNames.add("ArithmeticException");

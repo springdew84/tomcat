@@ -107,7 +107,7 @@ public class JspC extends Task implements Options {
     public static final String DEFAULT_IE_CLASS_ID =
             "clsid:8AD9C840-044E-11D1-B3E9-00805F499D93";
 
-    // Logger
+    // MyLogger
     private static final Log log = LogFactory.getLog(JspC.class);
 
     protected static final String SWITCH_VERBOSE = "-v";

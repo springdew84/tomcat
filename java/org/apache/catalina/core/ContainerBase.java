@@ -178,7 +178,7 @@ public abstract class ContainerBase extends LifecycleMBeanBase
     protected final List<ContainerListener> listeners = new CopyOnWriteArrayList<>();
 
     /**
-     * The Logger implementation with which this Container is associated.
+     * The MyLogger implementation with which this Container is associated.
      */
     protected Log logger = null;
 
@@ -350,7 +350,7 @@ public abstract class ContainerBase extends LifecycleMBeanBase
 
 
     /**
-     * Return the Logger for this Container.
+     * Return the MyLogger for this Container.
      */
     @Override
     public Log getLogger() {

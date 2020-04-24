@@ -359,7 +359,7 @@ public class RemoteIpValve extends ValveBase {
     private static final Pattern commaSeparatedValuesPattern = Pattern.compile("\\s*,\\s*");
 
     /**
-     * Logger
+     * MyLogger
      */
     private static final Log log = LogFactory.getLog(RemoteIpValve.class);
 

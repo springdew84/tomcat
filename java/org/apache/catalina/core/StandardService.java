@@ -23,6 +23,7 @@ import java.util.ArrayList;
 
 import javax.management.ObjectName;
 
+import org.apache.MyLogger;
 import org.apache.catalina.Container;
 import org.apache.catalina.Engine;
 import org.apache.catalina.Executor;
@@ -527,7 +528,6 @@ public class StandardService extends LifecycleMBeanBase implements Service {
      */
     @Override
     protected void initInternal() throws LifecycleException {
-
         super.initInternal();
 
         if (engine != null) {

@@ -237,7 +237,7 @@ public class ClassLoaderLogManager extends LogManager {
     /**
      * Get the logger associated with the specified name inside
      * the classloader local configuration. If this returns null,
-     * and the call originated for Logger.getLogger, a new
+     * and the call originated for MyLogger.getLogger, a new
      * logger with the specified name will be instantiated and
      * added using addLogger.
      *

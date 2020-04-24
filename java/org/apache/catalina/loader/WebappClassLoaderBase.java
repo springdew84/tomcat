@@ -59,6 +59,7 @@ import java.util.jar.Attributes;
 import java.util.jar.Attributes.Name;
 import java.util.jar.Manifest;
 
+import org.apache.MyLogger;
 import org.apache.catalina.Container;
 import org.apache.catalina.Globals;
 import org.apache.catalina.Lifecycle;
@@ -1208,6 +1209,7 @@ public abstract class WebappClassLoaderBase extends URLClassLoader
      */
     @Override
     public Class<?> loadClass(String name, boolean resolve) throws ClassNotFoundException {
+        MyLogger.log("load class:" + name);
 
         synchronized (getClassLoadingLock(name)) {
             if (log.isDebugEnabled())
@@ -1511,6 +1513,7 @@ public abstract class WebappClassLoaderBase extends URLClassLoader
      */
     @Override
     public void start() throws LifecycleException {
+        MyLogger.log(this);
 
         state = LifecycleState.STARTING_PREP;
 

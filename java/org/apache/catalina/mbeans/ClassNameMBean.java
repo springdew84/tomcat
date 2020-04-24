@@ -21,7 +21,7 @@ package org.apache.catalina.mbeans;
  * where the underlying base class (and therefore the set of supported
  * properties) is different for varying implementations of a standard
  * interface.  For Catalina, that includes at least the following:
- * Connector, Logger, Realm, and Valve.  This class creates an artificial
+ * Connector, MyLogger, Realm, and Valve.  This class creates an artificial
  * MBean attribute named <code>className</code>, which reports the fully
  * qualified class name of the managed object as its value.</p>
  *

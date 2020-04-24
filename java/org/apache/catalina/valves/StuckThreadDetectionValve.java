@@ -44,7 +44,7 @@ import org.apache.tomcat.util.res.StringManager;
 public class StuckThreadDetectionValve extends ValveBase {
 
     /**
-     * Logger
+     * MyLogger
      */
     private static final Log log = LogFactory.getLog(StuckThreadDetectionValve.class);
 

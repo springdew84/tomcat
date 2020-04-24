@@ -1517,7 +1517,7 @@ public class ExpiresFilter extends FilterBase {
      * Must be called on the "Start Write Response Body" event.
      * </p>
      * <p>
-     * Invocations to {@code Logger.debug(...)} are guarded by
+     * Invocations to {@code MyLogger.debug(...)} are guarded by
      * {@link Log#isDebugEnabled()} because
      * {@link HttpServletRequest#getRequestURI()} and
      * {@link HttpServletResponse#getContentType()} costs {@code String}

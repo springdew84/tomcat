@@ -296,6 +296,7 @@ public class MapperListener extends LifecycleMBeanBase
 
 
     /**
+     * 注册虚拟主机
      * Register host.
      */
     private void registerHost(Host host) {

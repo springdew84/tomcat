@@ -62,7 +62,7 @@ import org.apache.juli.logging.Log;
  * <ul>
  * <li><b>Loader</b> - Class loader to use for integrating new Java classes
  *     for this Container into the JVM in which Catalina is running.
- * <li><b>Logger</b> - Implementation of the <code>log()</code> method
+ * <li><b>MyLogger</b> - Implementation of the <code>log()</code> method
  *     signatures of the <code>ServletContext</code> interface.
  * <li><b>Manager</b> - Manager for the pool of Sessions associated with
  *     this Container.
@@ -115,8 +115,8 @@ public interface Container extends Lifecycle {
     /**
      * Obtain the log to which events for this container should be logged.
      *
-     * @return The Logger with which this Container is associated.  If there is
-     *         no associated Logger, return the Logger associated with the
+     * @return The MyLogger with which this Container is associated.  If there is
+     *         no associated MyLogger, return the MyLogger associated with the
      *         parent Container (if any); otherwise return <code>null</code>.
      */
     public Log getLogger();

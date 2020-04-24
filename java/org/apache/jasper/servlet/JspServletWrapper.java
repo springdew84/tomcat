@@ -78,7 +78,7 @@ public class JspServletWrapper {
         ALWAYS_OUTDATED_DEPENDENCIES.put("/WEB-INF/web.xml", Long.valueOf(-1));
     }
 
-    // Logger
+    // MyLogger
     private final Log log = LogFactory.getLog(JspServletWrapper.class); // must not be static
 
     private volatile Servlet theServlet;

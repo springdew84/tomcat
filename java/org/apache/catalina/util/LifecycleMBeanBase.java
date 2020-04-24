@@ -23,6 +23,7 @@ import javax.management.MBeanServer;
 import javax.management.MalformedObjectNameException;
 import javax.management.ObjectName;
 
+import org.apache.MyLogger;
 import org.apache.catalina.Globals;
 import org.apache.catalina.JmxEnabled;
 import org.apache.catalina.LifecycleException;
@@ -52,6 +53,8 @@ public abstract class LifecycleMBeanBase extends LifecycleBase
      */
     @Override
     protected void initInternal() throws LifecycleException {
+        MyLogger.printTrack(this, log, "initInternal");
+
         // If oname is not null then registration has already happened via
         // preRegister().
         if (oname == null) {

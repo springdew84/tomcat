@@ -116,7 +116,7 @@ public final class ExtensionValidator {
      * to the validateManifestResources method for validation.
      *
      * @param resources The resources configured for this Web Application
-     * @param context   The context from which the Logger and path to the
+     * @param context   The context from which the MyLogger and path to the
      *                  application
      *
      * @return true if all required extensions satisfied

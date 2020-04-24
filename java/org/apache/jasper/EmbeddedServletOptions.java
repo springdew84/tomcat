@@ -42,7 +42,7 @@ import org.apache.juli.logging.LogFactory;
  */
 public final class EmbeddedServletOptions implements Options {
 
-    // Logger
+    // MyLogger
     private final Log log = LogFactory.getLog(EmbeddedServletOptions.class); // must not be static
 
     private Properties settings = new Properties();

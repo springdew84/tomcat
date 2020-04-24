@@ -81,7 +81,7 @@ public class CallbackHandlerImpl implements CallbackHandler {
                     GroupPrincipalCallback gpc = (GroupPrincipalCallback) callback;
                     groups = gpc.getGroups();
                 } else {
-                    // This is a singleton so need to get correct Logger for
+                    // This is a singleton so need to get correct MyLogger for
                     // current TCCL
                     Log log = LogFactory.getLog(CallbackHandlerImpl.class);
                     log.error(sm.getString("callbackHandlerImpl.jaspicCallbackMissing",

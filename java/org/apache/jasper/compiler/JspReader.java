@@ -47,7 +47,7 @@ import org.apache.tomcat.Jar;
 class JspReader {
 
     /**
-     * Logger.
+     * MyLogger.
      */
     private final Log log = LogFactory.getLog(JspReader.class); // must not be static
 
